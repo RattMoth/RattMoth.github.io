@@ -1,5 +1,5 @@
 :root {
-  --primary-text-color: #000000;
+  --primary-text-color: #252a3b;
   --secondary-text-color: #09777a;
   --main-background-color: #eee;
 }
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Montserrat, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
 
@@ -38,6 +38,10 @@ body {
   text-decoration: none;
 }
 
+#navbar a:hover {
+  color: purple;
+}
+
 section::before {
   display: block;
   content: ' ';
@@ -53,13 +57,14 @@ section::before {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
 }
 
 #welcome-section h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 #projects {
@@ -83,6 +88,7 @@ section::before {
   align-items: center;
   justify-content: center;
   margin-top: 3em;
+  margin-bottom: 10em;
 }
 
 #contact form {
@@ -92,8 +98,8 @@ section::before {
   grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
   grid-gap: 1em;
   grid-template-areas:
-    'email email-input'
     'name name-input'
+    'email email-input'
     'message message'
     '... button';
 }
@@ -141,15 +147,16 @@ textarea {
 footer {
   background-color: purple;
   padding: 0.1em;
-  margin-top: 5em;
+  margin-top: 4em;
   color: #eee;
 }
 
+footer p {
+  margin: 0.5em;
+}
+
 #link-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  margin-bottom: 5em;
+  margin: 3em auto 5em auto;
   width: 80%;
   display: flex;
   justify-content: space-around;
@@ -157,24 +164,20 @@ footer {
 
 #link-container img {
   border-radius: 100px;
+  height: 100px;
+  width: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1em;
-  }
+@media only screen and (max-width: 470px) {
   #navbar ul {
     display: flex;
-    justify-content: space-around;
-    margin: 0;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    margin: auto;
   }
-  #link-container {
-    display: grid;
-    justify-items: center;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    grid-gap: 1em;
+
+  #navbar li {
+    list-style-type: none;
+    margin: 1em 3em;
   }
 }
