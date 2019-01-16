@@ -169,8 +169,8 @@ footer p {
 
 #link-container img {
   border-radius: 100px;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 @media only screen and (max-width: 470px) {
