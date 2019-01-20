@@ -76,8 +76,8 @@ main section:not(#welcome-section) {
 }
 
 .project-img {
-  height: 169px;
-  width: 300px;
+  height: 250px;
+  width: 444px;
   display: inline-block;
   border-radius: 0.5rem;
   border-width: 0.25rem;
@@ -111,9 +111,9 @@ main section:not(#welcome-section) {
 
 .container-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(444px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 3em;
   max-width: 80vw;
   margin: auto;
 }
