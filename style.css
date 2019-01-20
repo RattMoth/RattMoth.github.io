@@ -84,7 +84,8 @@ main section:not(#welcome-section) {
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.project-img:hover {
+.project-img:hover,
+#link-container img:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
