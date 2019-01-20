@@ -16,6 +16,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   scroll-behavior: smooth;
+  scroll-padding: 5em 0 0;
 }
 
 main section:not(#welcome-section) {
@@ -46,15 +47,6 @@ main section:not(#welcome-section) {
 
 #navbar a:hover {
   color: purple;
-}
-
-section::before {
-  display: block;
-  content: ' ';
-  margin-top: -3em;
-  height: 3em;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 #welcome-section {
