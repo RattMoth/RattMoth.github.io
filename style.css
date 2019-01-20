@@ -23,7 +23,8 @@ main section:not(#welcome-section) {
 }
 
 #navbar {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   background-color: var(--main-background-color);
   position: fixed;
 }
@@ -62,7 +63,8 @@ section::before {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
 }
@@ -93,15 +95,17 @@ section::before {
 #about h2 {
   flex: 1;
   justify-content: space-evenly;
+  margin-right: 1em;
 }
 
 #about p {
   flex: 2;
+  margin-left: 1rem;
 }
 
 .container-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 3em;
 }
@@ -193,6 +197,7 @@ footer p {
   border-radius: 100px;
   height: 90px;
   width: 90px;
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 470px) {
