@@ -121,7 +121,7 @@ main section:not(#welcome-section) {
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 3em;
   max-width: 80vw;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #contact-container {
@@ -231,5 +231,13 @@ footer p {
 @media only screen and (max-width: 800px) {
   #contact form {
     width: 100%;
+  }
+  .project-img {
+    height: 169px;
+    width: 300px;
+  }
+  .container-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
   }
 }
