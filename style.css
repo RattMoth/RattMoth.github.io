@@ -78,6 +78,20 @@ main section:not(#welcome-section) {
 .project-img {
   height: 169px;
   width: 300px;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border-width: 0.25rem;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-img:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: transform 0.25s ease-in-out;
+  -webkit-transition: transform 0.25s ease-in-out;
+  -moz-transition: transform 0.25s ease-in-out;
+  -ms-transition: transform 0.25s ease-in-out;
 }
 
 #about {
