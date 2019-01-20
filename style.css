@@ -95,6 +95,11 @@ main section:not(#welcome-section) {
   -ms-transition: transform 0.25s ease-in-out;
 }
 
+.project-img:active,
+#link-container img:active {
+  transform: translateY(4px);
+}
+
 #about {
   display: flex;
 }
