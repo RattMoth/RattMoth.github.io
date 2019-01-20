@@ -18,6 +18,10 @@ body {
   scroll-behavior: smooth;
 }
 
+main section:not(#welcome-section) {
+  margin: 3rem;
+}
+
 #navbar {
   width: 100%;
   background-color: var(--main-background-color);
@@ -82,6 +86,19 @@ section::before {
   width: 300px;
 }
 
+#about {
+  display: flex;
+}
+
+#about h2 {
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+#about p {
+  flex: 2;
+}
+
 .container-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -108,6 +125,10 @@ section::before {
     'email email-input'
     'message message'
     '... button';
+}
+
+#contact form input {
+  padding: 0 1em;
 }
 
 input,
@@ -185,5 +206,11 @@ footer p {
   #navbar li {
     list-style-type: none;
     margin: 1em 3em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contact form {
+    width: 100%;
   }
 }
