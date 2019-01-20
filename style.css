@@ -33,7 +33,7 @@ main section:not(#welcome-section) {
 #navbar ul {
   display: flex;
   justify-content: flex-end;
-  margin: 0;
+  margin: auto;
 }
 
 #navbar li {
@@ -114,6 +114,8 @@ main section:not(#welcome-section) {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 3em;
+  max-width: 80vw;
+  margin: auto;
 }
 
 #contact-container {
@@ -216,7 +218,7 @@ footer p {
 
   #navbar li {
     list-style-type: none;
-    margin: 1em 3em;
+    margin: 1em auto;
   }
 }
 
