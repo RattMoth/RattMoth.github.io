@@ -28,6 +28,7 @@ main section:not(#welcome-section) {
   max-width: 100%;
   background-color: var(--main-background-color);
   position: fixed;
+  z-index: 1;
 }
 
 #navbar ul {
