@@ -227,6 +227,10 @@ footer p {
     list-style-type: none;
     margin: 1em auto;
   }
+
+  #about {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 800px) {
