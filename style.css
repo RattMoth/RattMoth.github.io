@@ -114,6 +114,7 @@ main section:not(#welcome-section) {
 #about p {
   flex: 2;
   margin-left: 1rem;
+  text-align: left;
 }
 
 .container-grid {
