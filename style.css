@@ -232,6 +232,10 @@ footer p {
   #about {
     flex-direction: column;
   }
+
+  #about h2 {
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
