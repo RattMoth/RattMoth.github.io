@@ -34,34 +34,33 @@
       <section id="about">
         <h2>A Little About Me</h2>
         <p>
-          I am a technology enthusiast. Whether it's trying a new Linux distro,
-          installing custom ROMs on my smartphone, or learning a new JavaScript
-          feature or framework, I find technology endlessly fascinating. Staying
-          up to date with the latest <s> ES6 ES2016 ES2017</s> ES.Next syntax
-          feels like less of a chore and more of an opportunity to learn
-          something new. <br />
+          I'm a technology enthusiast. Whether it's trying a new Linux distro,
+          discovering new forms of task automation, or learning a new JavaScript
+          feature or framework, I find technology endlessly fascinating.
+          Technology evolves at such a fast rate that there's always something
+          new to learn! <br />
           <br />
-          Within the US school system a career in technology was never presented
-          as something for me, and as such I never chose to pursue it within the
-          realm of traditional education. After graduating from UC Santa Barbara
-          with a degree in Biological Anthropology I still found myself with a
-          desire to continue learning. Now, after 10 months and countless hours
-          of self-teaching, web development has grown from a fun hobby to my
-          career choice.
+          Technology has been my hobby since high school (it started when I
+          googled "how to program" after watching the original Tron movie).
+          However, within the US school system a career in technology was never
+          presented as something for me, and as such I didn't choose to pursue
+          it within the scope of traditional education. After graduating from UC
+          Santa Barbara with a degree in Biological Anthropology I still found
+          myself with an interest in tech and a strong desire to continue
+          learning. Now, after 10 months and countless hours of self-teaching,
+          web development has grown from a fun hobby to my career choice.
         </p>
       </section>
 
       <section id="work">
         <h2>Here's what I can do</h2>
         <p>
-          With such a large and constantly growing selection of technology, I
-          believe it is possible to find a framework or language for almost any
-          imaginable use case. Conversely, there is also the potential to become
-          enamored with the latest trendy framework and to begin using it for
-          every project, even if it falls outside of that framework's ideal use
-          case. For example, this website was built using exclusively HTML and
-          CSS. No JavaScript, no Bootstrap, no extra libraries (you can check
-          out
+          With such a large and constantly growing selection of technology,
+          choosing the right tool for the job is a skill all on it's own. It's
+          all too easy to learn one framework and use it for everything, even if
+          the project falls outside of the framework's ideal use case. For
+          example, this website was built using only HTML and CSS. No
+          JavaScript, no Bootstrap, no extra libraries (you can check out
           <a
             target="_blank"
             href="https://github.com/RattMoth/RattMoth.github.io"
@@ -76,43 +75,142 @@
           that might distract from the project's core functionality.
         </p>
         <div class="container-grid">
-          <a target="_blank" href="https://rattmoth.github.io/react-todo-list">
-            <img
-              class="project-img"
-              src="/img/react-todo-screenshot.png"
-              alt="react-todo-screenshot"
-            />
-          </a>
-          <a
-            target="_blank"
-            href="https://rattmoth.github.io/gradient-generator"
-          >
-            <img
-              class="project-img"
-              src="/img/gradient-generator-screenshot.png"
-              alt="gradient-generator-screenshot"
-            />
-          </a>
-          <a
-            target="_blank"
-            href="https://rattmoth.github.io/reactAppPractice/"
-          >
-            <img
-              class="project-img"
-              src="/img/reactPracticeApp-screenshot.png"
-              alt="reactPracticeApp"
-            />
-          </a>
-          <a href="https://placeholder.com">
-            <img src="http://via.placeholder.com/250x200" alt="placeholder" />
-          </a>
-          <a href="https://placeholder.com">
-            <img src="http://via.placeholder.com/250x200" alt="placeholder" />
-          </a>
-          <a href="https://placeholder.com">
-            <img src="http://via.placeholder.com/250x200" alt="placeholder" />
-          </a>
-        </div>
+          <div class="card">
+            <h3 class="card-title">
+              Todo List with React
+              <a target="_blank" href="https://github.com/RattMoth/react-todo-list" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a
+              target="_blank"
+              href="https://rattmoth.github.io/react-todo-list"
+            >
+              <img
+                class="project-img"
+                src="/img/react-todo-screenshot.png"
+                alt="react-todo-screenshot"
+              />
+            </a>
+            <div class="card-description">
+              Fetches todo data from
+              <a
+                target="_blank"
+                href="https://jsonplaceholder.typicode.com/todos"
+                >jsonplaceholder.com</a
+              >
+              while allowing for new user added items. Manages state using
+              React.
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Gradient Generator
+              <a target="_blank" href="https://github.com/RattMoth/gradient-generator" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a
+              target="_blank"
+              href="https://rattmoth.github.io/gradient-generator"
+            >
+              <img
+                class="project-img"
+                src="/img/gradient-generator-screenshot.png"
+                alt="gradient-generator-screenshot"
+              />
+            </a>
+            <div class="card-description">
+              The user can pick two different colors or have two randomly
+              selected. The colors are then displayed as a gradient in the
+              background. The css needed to create the effect is displayed
+              below. Uses vanilla JavaScript for DOM manipulation.
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Database Search
+              <a target="_blank" href="https://github.com/RattMoth/reactAppPractice" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a
+              target="_blank"
+              href="https://rattmoth.github.io/reactAppPractice/"
+            >
+              <img
+                class="project-img"
+                src="/img/reactPracticeApp-screenshot.png"
+                alt="reactPracticeApp"
+              />
+            </a>
+            <div class="card-description">
+              Fetches and displays a user database from
+              <a
+                target="_blank"
+                href="https://jsonplaceholder.typicode.com/users"
+                >jsonplaceholder.com</a
+              >. Robot avatars are created from each user's id number using
+              <a target="_blank" href="https://robohash.org/">robohash.org</a>
+              The user can search within the database and results will be
+              instantly displayed. Uses React.
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Lorem ipsum dolor sit.
+              <a target="_blank" href="#" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a href="https://placeholder.com">
+              <img src="http://via.placeholder.com/440x250" alt="placeholder" />
+            </a>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              impedit reprehenderit rem quia officiis accusamus recusandae vitae
+              distinctio, eum alias id numquam culpa, quaerat consectetur.
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Lorem ipsum dolor sit.
+              <a target="_blank" href="#" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a href="https://placeholder.com">
+              <img src="http://via.placeholder.com/440x250" alt="placeholder" />
+            </a>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              impedit reprehenderit rem quia officiis accusamus recusandae vitae
+              distinctio, eum alias id numquam culpa, quaerat consectetur.
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Lorem ipsum dolor sit.
+              <a target="_blank" href="#" class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a href="https://placeholder.com">
+              <img src="http://via.placeholder.com/440x250" alt="placeholder" />
+            </a>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              impedit reprehenderit rem quia officiis accusamus recusandae vitae
+              distinctio, eum alias id numquam culpa, quaerat consectetur.
+            </div>
+          </div>
+
+         
       </section>
 
       <section id="contact">
