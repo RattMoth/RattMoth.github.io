@@ -1,7 +1,7 @@
 :root {
   --primary-text-color: #3d3d3f;
   --secondary-text-color: #09777a;
-  --main-background-color: #f9f8fd;
+  --main-background-color: #eeeeee;
 }
 
 .secondary-text {
@@ -21,7 +21,7 @@ body {
 }
 
 main section:not(#welcome-section) {
-  margin: 3rem;
+  margin: 4rem;
 }
 
 #navbar {
