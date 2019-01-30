@@ -79,7 +79,11 @@ main section:not(#welcome-section) {
   margin-bottom: 3em;
 }
 
-#work p:last-of-type {
+#work p {
+  text-align: left;
+}
+
+#work p:nth-child(3) {
   margin-bottom: 4em;
 }
 
@@ -247,6 +251,10 @@ footer p {
 }
 
 @media only screen and (max-width: 470px) {
+  main section:not(#welcome-section) {
+    margin: 3rem;
+  }
+
   #navbar ul {
     display: flex;
     margin: auto;
