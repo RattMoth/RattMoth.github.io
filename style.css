@@ -14,6 +14,7 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Quicksand', sans-serif;
+  line-height: 1.4;
   text-align: center;
   scroll-behavior: smooth;
   scroll-padding: 5em 0 0;
@@ -67,6 +68,8 @@ main section:not(#welcome-section) {
   font-size: 2.5em;
 }
 
+/* Project Section */
+
 #projects {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -76,7 +79,7 @@ main section:not(#welcome-section) {
   margin-bottom: 3em;
 }
 
-#work h3 {
+#work p:last-of-type {
   margin-bottom: 4em;
 }
 
@@ -88,6 +91,8 @@ main section:not(#welcome-section) {
   border-width: 0.25rem;
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
+/* Hover and active effects for project links and social links */
 
 .project-img:hover,
 #link-container img:hover {
@@ -105,6 +110,8 @@ main section:not(#welcome-section) {
   transform: translateY(4px);
 }
 
+/* About Section */
+
 #about {
   display: flex;
 }
@@ -121,6 +128,8 @@ main section:not(#welcome-section) {
   text-align: left;
 }
 
+/* Container for Contact Form */
+
 .container-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(444px, 1fr));
@@ -136,6 +145,22 @@ main section:not(#welcome-section) {
   justify-content: center;
   margin-top: 3em;
   margin-bottom: 10em;
+}
+
+/* Contact Link Formatting */
+
+#link-container {
+  margin: 3em auto 5em auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#link-container img {
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+  padding: 1rem;
 }
 
 #contact form {
@@ -161,6 +186,8 @@ textarea {
   border-radius: 5px;
 }
 
+/* Grid Template Area Names */
+
 #email {
   grid-area: email;
 }
@@ -185,7 +212,6 @@ textarea {
   text-decoration: none;
   padding: 0.5em;
   justify-self: end;
-  /* margin: auto; */
   background-color: rgb(72, 94, 116, 0.5);
   color: #ffffff;
   grid-area: button;
@@ -206,25 +232,23 @@ footer p {
   margin: 0.5em;
 }
 
-#link-container {
-  margin: 3em auto 5em auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#link-container img {
-  border-radius: 100px;
-  height: 90px;
-  width: 90px;
-  padding: 1rem;
+@media only screen and (max-width: 800px) {
+  #contact form {
+    width: 100%;
+  }
+  .project-img {
+    height: 169px;
+    width: 300px;
+  }
+  .container-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 @media only screen and (max-width: 470px) {
   #navbar ul {
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
     margin: auto;
   }
 
@@ -240,17 +264,19 @@ footer p {
   #about h2 {
     margin: auto;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  #contact form {
-    width: 100%;
+  #link-container img {
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+    padding: 1rem;
   }
   .project-img {
-    height: 169px;
-    width: 300px;
+    height: 144px;
+    width: 256px;
   }
   .container-grid {
+    margin: none;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 1fr);
   }
