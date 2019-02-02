@@ -231,7 +231,13 @@
           Or if you prefer a more direct approach, feel free to use this form
         </p>
         <div id="contact-container">
-          <form>
+          <form action="https://formspree.io/matt.dipaolo.roth@gmail.com" method="POST">
+            <div class="hpot">
+              <label>Leave this field empty: <input name="_gotcha"></label>
+            </div>
+            <input type="hidden" name="_subject" value="New contact from your website!" />
+
+
             <label id="name">Name:</label>
             <input
               placeholder="Peter Parker"
@@ -244,7 +250,7 @@
             <input
               placeholder="notSpiderman@dailyBugle.biz"
               type="email"
-              name="email"
+              name="_replyto"
               id="email-input"
             />
 
@@ -255,7 +261,7 @@
               cols="30"
               rows="10"
             ></textarea>
-            <a href="#" class="button">Submit</a>
+            <input class="button" type="submit" value="Send">
           </form>
         </div>
       </section>

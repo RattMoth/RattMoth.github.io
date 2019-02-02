@@ -170,6 +170,12 @@ h2 {
   margin-bottom: 10em;
 }
 
+/* Honeypot gotcha */
+
+.hpot {
+  display: none;
+}
+
 /* Contact Link Formatting */
 
 #link-container {
