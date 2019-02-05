@@ -94,13 +94,18 @@ h2 {
 
 /* Project Section */
 
-#work p {
-  text-align: left;
+.work-text {
+  display: flex;
 }
 
-#work p:nth-child(3) {
-  margin-bottom: 4em;
+.work-text p {
+  text-align: left;
+  width: 50%;
 }
+
+/* #work p:nth-child(3) {
+  margin-bottom: 4em;
+} */
 
 .container-grid {
   display: grid;
@@ -183,6 +188,7 @@ h2 {
   margin: 3em auto 5em auto;
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -299,6 +305,14 @@ footer p {
     margin: auto;
   }
 
+  .work-text {
+    flex-direction: column;
+  }
+
+  .work-text p {
+    width: 100%;
+  }
+
   #link-container img {
     border-radius: 100px;
     height: 70px;
@@ -313,5 +327,10 @@ footer p {
     margin: none;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 380px) {
+  #link-container {
+    width: auto;
   }
 }
