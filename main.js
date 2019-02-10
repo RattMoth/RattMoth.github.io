@@ -29,7 +29,7 @@ const unHide = () => {
 
 const scrollFunction = () => {
   if (document.documentElement.clientWidth >= 800) {
-    if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
+    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
       document.getElementById('navbar').style.top = '0';
       hide();
     } else {

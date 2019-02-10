@@ -77,6 +77,10 @@ h2 {
   color: transparent;
 }
 
+.toggle-text {
+  transition: all 0.3s;
+}
+
 #welcome-section {
   display: flex;
   justify-content: center;
