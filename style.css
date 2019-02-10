@@ -36,6 +36,7 @@ h2 {
   background-color: var(--main-background-color);
   position: fixed;
   z-index: 1;
+  transition: top 0.3s;
 }
 
 #navbar ul {
@@ -45,17 +46,35 @@ h2 {
   padding-left: 0px;
 }
 
-#navbar li {
+#navbar li,
+#secondary-nav li {
   list-style-type: none;
   margin: 1em 3em;
 }
 
-#navbar a {
+#navbar a,
+#secondary-nav a {
   text-decoration: none;
 }
 
-#navbar a:hover {
+#navbar a:hover,
+#secondary-nav a:hover {
   color: purple;
+}
+
+#secondary-nav {
+  display: flex;
+}
+
+#secondary-nav ul {
+  font-size: 1.5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  color: transparent;
 }
 
 #welcome-section {
@@ -66,7 +85,11 @@ h2 {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  background-color: var(--main-background-color);
+  background: url(./img/grey-geo-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: var(--primary-text-color);
 }
 
@@ -284,6 +307,15 @@ footer p {
   .container-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 1fr);
+  }
+
+  .toggle-text {
+    color: transparent;
+    font-size: 1px;
+  }
+
+  #secondary-nav ul {
+    width: 1px;
   }
 }
 
