@@ -36,14 +36,12 @@ const unHideText = () => {
 // On scroll event to hide and unhide secondary-nav if the scroll position is greater than 160
 // and screen width is more than 800
 const scrollFunction = () => {
-  if (viewportWidth >= 800) {
-    if (documentBodyScroll.scrollTop > 160 || documentElementScroll.scrollTop > 160) {
-      document.getElementById('navbar').style.top = '0';
-      hideText();
-    } else {
-      document.getElementById('navbar').style.top = '-60px';
-      unHideText();
-    }
+  if (documentBodyScroll.scrollTop > 160 || documentElementScroll.scrollTop > 160) {
+    document.getElementById('navbar').style.top = '0';
+    hideText();
+  } else {
+    document.getElementById('navbar').style.top = '-60px';
+    unHideText();
   }
 };
 

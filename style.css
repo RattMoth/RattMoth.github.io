@@ -71,11 +71,12 @@ h2 {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 /* Class used to show and hide text when called by onscroll js events */
 .hidden {
   color: transparent;
-  font-size: 1px;
+  font-size: 1px !important;
 }
 
 .toggle-text {
@@ -311,13 +312,7 @@ footer p {
   }
   /* Functions like a conditional. Toggles text when screen is smaller than 800px */
   .toggle-text {
-    color: transparent;
-    font-size: 1px;
-  }
-
-  #secondary-nav ul {
-    width: 0px;
-    height: 0px;
+    font-size: 1.2rem;
   }
 }
 
@@ -334,6 +329,10 @@ footer p {
   #navbar li {
     list-style-type: none;
     margin: 1em auto;
+  }
+
+  #secondary-nav li {
+    margin: 1em;
   }
 
   #about {
