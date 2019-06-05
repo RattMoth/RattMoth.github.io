@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197596-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-134197596-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'UA-134197596-1');
@@ -41,60 +46,106 @@
         <p class="secondary-text">a fullstack web developer</p>
         <div id="secondary-nav">
           <ul>
-              <li><a class="toggle-text secondary-text" href="#about">About</a></li>
-              <li><a class="toggle-text secondary-text" href="#work">Work</a></li>
-              <li><a class="toggle-text secondary-text" href="#contact">Contact</a></li>
-            </ul>
+            <li>
+              <a class="toggle-text secondary-text" href="#about">About</a>
+            </li>
+            <li><a class="toggle-text secondary-text" href="#work">Work</a></li>
+            <li>
+              <a class="toggle-text secondary-text" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section id="about">
         <h2>A Little About Me</h2>
         <p>
-          I'm a technology enthusiast. Whether it's trying a new Linux distro, building new forms of task automation, or learning new JavaScript features or frameworks, I find technology endlessly fascinating.
+          I'm a technology enthusiast. Whether it's trying a new Linux distro,
+          building new forms of task automation, or learning new JavaScript
+          features or frameworks, I find technology endlessly fascinating.
           <br />
           <br />
-          While it is a cliché story, software has been my hobby since high school (it started when I googled "how to program" after watching the original Tron movie). Despite my interest, professional programming always seemed like something out of my reach. While in school, a career in technology was never presented as a possibility, instead it looked like that path was reserved for those who "loved math." An enthusiasm for programming was not enough it seemed.
+          While it is a cliché story, software has been my hobby since high
+          school (it started when I googled "how to program" after watching the
+          original Tron movie). Despite my interest, professional programming
+          always seemed like something out of my reach. While in school, a
+          career in technology was never presented as a possibility, instead it
+          looked like that path was reserved for those who "loved math." An
+          enthusiasm for programming was not enough it seemed.
           <br />
           <br />
-          As a result, I didn't choose to pursue programming within traditional education. However, after graduating from UC Santa Barbara with a degree in Biological Anthropology, I still found myself with an interest in tech and a desire to continue learning. Now after 11 months and many hours of self-teaching, tinkering, and building, web development has grown from a fun hobby to my career choice.
-         </p>
+          As a result, I didn't choose to pursue programming within traditional
+          education. However, after graduating from UC Santa Barbara with a
+          degree in Biological Anthropology, I still found myself with an
+          interest in tech and a desire to continue learning. Now after 11
+          months and many hours of self-teaching, tinkering, and building, web
+          development has grown from a fun hobby to my career choice.
+        </p>
       </section>
 
       <section id="work">
         <h2>Project Links</h2>
         <div class="work-text">
-            <p>
-              Thanks to the amazing community around web development there is an incredible amount of information available to the self-taught developer. I am now comfortable creating projects using HTML, CSS, and JavaScript (including all that good ES6 syntax and ES8 async/await), and am currently learning React, Node, and Express.
-            </p>
-            <p>
-              As an exercise in furthering my understanding of Vanilla JavaScript, HTML, and CSS, I have written this page without the use of any libraries. You can check out the
-              <a
-                target="_blank"
-                href="https://github.com/RattMoth/RattMoth.github.io"
-                >source here!</a> For other examples of my work please take a look at the projects below.
-            </p>
-        </div> 
+          <p>
+            Thanks to the amazing community around web development there is an
+            incredible amount of information available to the self-taught
+            developer. I am now comfortable creating projects using HTML, CSS,
+            and JavaScript (including all that good ES6 syntax and ES8
+            async/await), and am currently learning React, Node, and Express.
+          </p>
+          <p>
+            As an exercise in furthering my understanding of Vanilla JavaScript,
+            HTML, and CSS, I have written this page without the use of any
+            libraries. You can check out the
+            <a
+              target="_blank"
+              href="https://github.com/RattMoth/RattMoth.github.io"
+              >source here!</a
+            >
+            For other examples of my work please take a look at the projects
+            below.
+          </p>
+        </div>
         <div class="container-grid">
           <div class="card">
-              <h3 class="card-title">
-                Clarifai Face Recognition
-                <a target="_blank" href="https://github.com/RattMoth/face-recognition" class="git-btn"
-                  ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
-                /></a>
-              </h3>
-              <a target="_blank" href="https://rattmoth.github.io/face-recognition/">
-                <img class="project-img" src="img/face-recognition-screenshot.png" alt="face-recognition" />
-              </a>
-              <div class="card-description">
-                An image url is submitted by the user, then, using <a target="_blank" href="https://clarifai.com/models/face-detection-image-recognition-model-a403429f2ddf4b49b307e318f00e528b-detection"> the Clarifai Face Recognition API</a>, the image is returned with a box outlining the detected face. Uses React.
-              </div>
+            <h3 class="card-title">
+              Clarifai Face Recognition
+              <a
+                target="_blank"
+                href="https://github.com/RattMoth/face-recognition"
+                class="git-btn"
+                ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
+              /></a>
+            </h3>
+            <a
+              target="_blank"
+              href="https://rattmoth.github.io/face-recognition/"
+            >
+              <img
+                class="project-img"
+                src="img/face-recognition-screenshot.png"
+                alt="face-recognition"
+              />
+            </a>
+            <div class="card-description">
+              An image url is submitted by the user, then, using
+              <a
+                target="_blank"
+                href="https://clarifai.com/models/face-detection-image-recognition-model-a403429f2ddf4b49b307e318f00e528b-detection"
+              >
+                the Clarifai Face Recognition API</a
+              >, the image is returned with a box outlining the detected face.
+              Uses React.
             </div>
+          </div>
 
           <div class="card">
             <h3 class="card-title">
               Todo List with React
-              <a target="_blank" href="https://github.com/RattMoth/react-todo-list" class="git-btn"
+              <a
+                target="_blank"
+                href="https://github.com/RattMoth/react-todo-list"
+                class="git-btn"
                 ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
               /></a>
             </h3>
@@ -123,24 +174,39 @@
           <div class="card">
             <h3 class="card-title">
               Star Wars API Frontend.
-              <a target="_blank" href="https://github.com/RattMoth/swapi-frontend" class="git-btn"
+              <a
+                target="_blank"
+                href="https://github.com/RattMoth/swapi-frontend"
+                class="git-btn"
                 ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
               /></a>
             </h3>
-            <a 
-            target="_blank"
-            href="https://rattmoth.github.io/swapi-frontend/">
-              <img class="project-img" src="/img/swapi-frontend-screenshot.png" alt="swapi-frontend" />
+            <a
+              target="_blank"
+              href="https://rattmoth.github.io/swapi-frontend/"
+            >
+              <img
+                class="project-img"
+                src="/img/swapi-frontend-screenshot.png"
+                alt="swapi-frontend"
+              />
             </a>
             <div class="card-description">
-              Frontend designed to fetch data from the <a target="_blank" href="http://swapi.co">Star Wars API</a>. Searches the database for a user-submitted character name and parses the returned JSON data into a human-readable (and grammatically correct) list of movie appearances.
+              Frontend designed to fetch data from the
+              <a target="_blank" href="http://swapi.co">Star Wars API</a>.
+              Searches the database for a user-submitted character name and
+              parses the returned JSON data into a human-readable (and
+              grammatically correct) list of movie appearances.
             </div>
           </div>
 
           <div class="card">
             <h3 class="card-title">
               Gradient Generator
-              <a target="_blank" href="https://github.com/RattMoth/gradient-generator" class="git-btn"
+              <a
+                target="_blank"
+                href="https://github.com/RattMoth/gradient-generator"
+                class="git-btn"
                 ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
               /></a>
             </h3>
@@ -165,7 +231,10 @@
           <div class="card">
             <h3 class="card-title">
               Database Search
-              <a target="_blank" href="https://github.com/RattMoth/reactAppPractice" class="git-btn"
+              <a
+                target="_blank"
+                href="https://github.com/RattMoth/reactAppPractice"
+                class="git-btn"
                 ><img src="/img/GitHub-Mark-120px-plus.png" alt="GitHub"
               /></a>
             </h3>
@@ -191,14 +260,15 @@
               instantly displayed. Uses React.
             </div>
           </div>
-
-          
-         
+        </div>
       </section>
 
       <section id="contact">
         <h2>Let's Get in Touch!</h2>
-        <p>Have some feedback? Want to work on something together? Even if you just want to chat about software, you can reach me on these sites.</p>
+        <p>
+          Have some feedback? Want to work on something together? Even if you
+          just want to chat about software, you can reach me on these sites.
+        </p>
 
         <div id="link-container">
           <a target="_blank" href="https://github.com/RattMoth"
@@ -209,8 +279,12 @@
             ><img src="/img/fcc.jpg" alt="freeCodeCamp" />
           </a>
 
-          <a target="_blank" href="https://www.linkedin.com/in/matt-tyler-roth/">
-          <img src="/img/social-linkedin-circle-512.png" alt="LinkedIn" /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/matt-tyler-roth/"
+          >
+            <img src="/img/social-linkedin-circle-512.png" alt="LinkedIn"
+          /></a>
 
           <a target="_blank" href="https://twitter.com/ratt_moth"
             ><img src="/img/Twitter_Social_Icon_Circle_Color.png" alt="twitter"
@@ -221,12 +295,15 @@
           Or if you prefer a more direct approach, feel free to use this form
         </p>
         <div id="contact-container">
-          <form id=contact-form method="POST">
+          <form id="contact-form" method="POST">
             <div class="hpot">
-              <label>Leave this field empty: <input name="_gotcha"></label>
+              <label>Leave this field empty: <input name="_gotcha"/></label>
             </div>
-            <input type="hidden" name="_subject" value="New contact from your website!" />
-
+            <input
+              type="hidden"
+              name="_subject"
+              value="New contact from your website!"
+            />
 
             <label id="name">Name:</label>
             <input
@@ -251,7 +328,7 @@
               cols="30"
               rows="10"
             ></textarea>
-            <input class="button" type="submit" value="Send">
+            <input class="button" type="submit" value="Send" />
           </form>
         </div>
       </section>
@@ -261,6 +338,5 @@
       <p>Copyright &copy; 2019 Matt Roth</p>
     </footer>
     <script src="./main.js"></script>
-
   </body>
 </html>
